@@ -1,0 +1,51 @@
+@import "_search.scss";
+
+$font-main: "Asap", sans-serif;
+$font-second: "Josefin Slab", serif;
+
+html,
+#root {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 62.5%;
+  color: #000;
+  font-family: $font-second;
+  font-weight: 500;
+  max-width: 1200px;
+}
+
+h1{
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+  background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+  margin: 0 0 2rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+h2{
+  display: block;
+  font-size: 4.5rem;
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+}
+
+p{
+  padding: 0 2.5rem 2.5rem;
+  margin: 0;
+}
+
+.card{
+  margin: 3rem 15rem;
+  border: 1px solid grey;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, .3);
+  border-radius: 12px;
+  overflow: hidden; 
+  transition: all .2s linear; 
+}
+
+.card:hover{
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -2px, 0);
+}
