@@ -1,5 +1,3 @@
-import "regenerator-runtime/runtime";
-
 import { keys } from "./keys";
 import { DOMSelectors } from "./DOM";
 
