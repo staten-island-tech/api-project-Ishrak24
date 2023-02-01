@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap");
+:root {
+  --rad: .7rem;
+  --dur: .3s;
+  --color-dark: #2f2f2f;
+  --color-light: #fff;
+  --color-brand: #57bd84;
+  --font-fam: "Nunito", sans-serif;
+  --height: 2.5vw;
+  --btn-width: 3.5vw;
+  --bez: ease;
+}
+
+form {
+  position: relative;
+  width: 15vw;
+  border-radius: var(--rad);
+}
+
+input, button {
+  height: var(--height);
+  font-family: var(--font-fam);
+  border: 0;
+  color: var(--color-dark);
+  font-size: 1vw;
+}
+
+input[type=search] {
+  outline: 0;
+  width: 100%;
+  background: var(--color-light);
+  padding: 0 1.6rem;
+  border-radius: var(--rad);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  transition: all var(--dur) var(--bez);
+  transition-property: width, border-radius;
+  z-index: 1;
+  position: relative;
+}
+
+button {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--btn-width);
+  font-weight: bold;
+  background: var(--color-brand);
+  border-radius: 0 var(--rad) var(--rad) 0;
+}
+
+input:not(:-moz-placeholder-shown) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+}
+
+input:not(:-ms-input-placeholder) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+}
+
+input:not(:placeholder-shown) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+}
+input:not(:-moz-placeholder-shown) + button {
+  display: block;
+}
+input:not(:-ms-input-placeholder) + button {
+  display: block;
+}
+input:not(:placeholder-shown) + button {
+  display: block;
+}
+
+label {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: rgb(0, 57, 78);
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.bg-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(0.15vw) brightness(0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.main-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  filter: drop-shadow(0.25vw 0.25vw 0.1vw black);
+}
+.main-container form {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+.main-container .title {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+.main-container .aqi-temp {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.main-container .aqi-temp #aqi {
+  margin: 0;
+  text-align: center;
+  font-size: 20vw;
+  font-weight: 800;
+  line-height: 20vw;
+}
+.main-container .aqi-temp #temp {
+  margin: 0;
+  font-size: 3vw;
+}
+.main-container .place-name {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  text-align: left;
+}
+.main-container .place-name #city-state {
+  margin: 0;
+  font-size: 4vw;
+}
+.main-container .place-name #country {
+  margin: 0;
+  font-size: 2vw;
+}/*# sourceMappingURL=style.css.map */

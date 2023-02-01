@@ -1,6 +1,11 @@
 const DOMSelectors = {
-  searchForm: document.getElementById("search-form"),
-  searchArea: document.getElementById("search-area"),
+  userSearch: document.querySelector("#search"),
+  userBtn: document.querySelector("#search-submit"),
+  placeCityState: document.querySelector("#city-state"),
+  placeCountry: document.querySelector("#country"),
+  aqi: document.querySelector("#aqi"),
+  temp: document.querySelector("#temp"),
+  bg: document.querySelector(".bg-container"),
 };
 
 export { DOMSelectors };
