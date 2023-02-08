@@ -51,7 +51,6 @@ function changeNumHTML(temp, aqi) {
     color = "purple";
   }
   DOMSelectors.aqi.style.color = color;
-
   DOMSelectors.aqi.innerHTML = aqi;
   DOMSelectors.temp.innerHTML = `${temp}°C / ${celciusToF(temp)}°F`;
 }
