@@ -4,17 +4,6 @@ async function fetchData(url) {
   return data;
 }
 
-async function returnFetch(entry) {
-  try {
-    const response = await fetch(entry);
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.log(error);
-    return 1;
-  }
-}
-
 async function getAllTypes() {
   const url = "https://pokeapi.co/api/v2/type";
   const typeData = await fetchData(url);
